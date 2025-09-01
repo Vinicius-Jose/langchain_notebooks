@@ -1,22 +1,26 @@
 # LangChain Notebooks
 
-This repository contains a collection of Jupyter notebooks developed in Google Colab, showcasing experiments with LangChain for various applications.
+This repository hosts a collection of Jupyter notebooks developed in Google Colab, demonstrating practical applications of LangChain for data-driven and educational tasks. Each notebook showcases experiments leveraging advanced language models, APIs, and vector databases.
 
-## Description
+## Notebooks
 
-- **[Llama](./Llama.ipynb)**: This notebook leverages Ollama and LLaMA 3.1 to generate national football team standings based on current player data and statistics. Data is sourced from the [Football API](https://v3.football.api-sports.io/).
+- **[Football Team Standings (Llama)](./Llama.ipynb)**  
+  This notebook utilizes Ollama and LLaMA 3.1 to generate national football team standings based on current player data and statistics retrieved from the [Football API](https://v3.football.api-sports.io/).  
+  **Note**: For optimal performance in Google Colab, select a runtime with GPU acceleration (e.g., T4 GPU).
 
-- **[RAG Education](./RAG_EDUCATION.ipynb)**: This notebook utilizes ChatGroq and Retrieval-Augmented Generation (RAG) techniques to create educational study materials. It generates concise summaries, practice questions, and references for the content. Articles are retrieved from [OpenAlex](https://api.openalex.org/works), downloaded, and stored in a Qdrant database for optimized RAG performance.
+- **[Educational Study Materials (RAG)](./RAG_EDUCATION.ipynb)**  
+  This notebook employs ChatGroq and Retrieval-Augmented Generation (RAG) techniques to create educational study materials, including concise summaries, practice questions, and references. Articles are sourced from [OpenAlex](https://api.openalex.org/works) and stored in a Qdrant database for efficient RAG performance.
 
 ## Technologies Used
 
-- **LangChain**: Framework for building applications with language models.
-- **LangGraph**: Tool for creating and managing complex workflows with LangChain.
-- **Qdrant**: Vector database for efficient storage and retrieval of embeddings in RAG applications.
-- **HuggingFace Transformers**: Library providing pre-trained models and tools for natural language processing.
-- **Ollama**: Platform for running and managing large language models like LLaMA 3.1.
-- **LLaMA 3.1**: A high-performing language model used for generating text and insights.
-- **ChatGroq**: AI model for conversational tasks and content generation.
+- **LangChain**: A framework for developing applications powered by language models.
+- **LangGraph**: A tool for designing and managing complex workflows within LangChain.
+- **Qdrant**: A vector database optimized for storing and retrieving embeddings in RAG applications.
+- **HuggingFace Transformers**: A library providing pre-trained models and tools for natural language processing tasks.
+- **Ollama**: A platform for running and managing large language models, such as LLaMA 3.1.
+- **LLaMA 3.1**: A high-performance language model for text generation and analysis.
+- **ChatGroq**: An AI model for conversational tasks and content generation.
 - **APIs**:
-  - [Football API](https://v3.football.api-sports.io/): Source for football player and team statistics.
-  - [OpenAlex](https://api.openalex.org/works): Source for academic articles used in educational content generation.
+  - [Football API](https://v3.football.api-sports.io/): Provides football player and team statistics.
+  - [OpenAlex](https://api.openalex.org/works): Supplies academic articles for educational content generation.
+
